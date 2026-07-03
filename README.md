@@ -1,4 +1,4 @@
-Name : pritheesh kumar v
+
 Intern ID :(CITS2282)
 
 # 🎓 Student Management System — Internship Project 
