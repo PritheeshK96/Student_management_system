@@ -1,4 +1,7 @@
-# 🎓 Student Management System — Internship Project (CITS2282)
+Name : pritheesh kumar v
+Intern ID :(CITS2282)
+
+# 🎓 Student Management System — Internship Project 
 
 A full-stack **Student Management System** built as an internship project. The application allows administrators to manage student records with a modern, responsive dashboard interface. It features secure JWT-based authentication, RESTful APIs, and a serverless deployment architecture on Vercel.
 
