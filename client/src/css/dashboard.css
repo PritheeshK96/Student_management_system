@@ -1,0 +1,195 @@
+.dashboard-title-section {
+  margin-bottom: 30px;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.dashboard-title-section h1 {
+  font-size: 1.85rem;
+  font-weight: 800;
+  margin-bottom: 4px;
+  color: var(--text-main);
+}
+
+.dashboard-title-section p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-bottom: 36px;
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.stat-card {
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.stat-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background: rgba(99, 102, 241, 0.12);
+  color: #818cf8;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.stat-card:nth-child(2) .stat-icon {
+  background: rgba(168, 85, 247, 0.12);
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.stat-info h3 {
+  font-size: 1.85rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.stat-info p {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 24px;
+  animation: fadeIn 0.7s ease forwards;
+}
+
+@media (max-width: 992px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dashboard-section {
+  padding: 24px;
+  min-height: 380px;
+}
+
+.dashboard-section h2 {
+  font-size: 1.15rem;
+  margin-bottom: 20px;
+  color: var(--text-main);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 12px;
+}
+
+/* Department Progress Bars */
+.dept-stat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dept-stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dept-stat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.dept-stat-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dept-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dept-progress-bg {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.dept-progress-bar {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Colors matching student badges */
+.bg-cse { background: #6366f1; }
+.bg-ece { background: #a855f7; }
+.bg-eee { background: #f59e0b; }
+.bg-civil { background: #3b82f6; }
+.bg-mech { background: #10b981; }
+
+.dot-cse { background: #6366f1; box-shadow: 0 0 8px rgba(99, 102, 241, 0.5); }
+.dot-ece { background: #a855f7; box-shadow: 0 0 8px rgba(168, 85, 247, 0.5); }
+.dot-eee { background: #f59e0b; box-shadow: 0 0 8px rgba(245, 158, 11, 0.5); }
+.dot-civil { background: #3b82f6; box-shadow: 0 0 8px rgba(59, 130, 246, 0.5); }
+.dot-mech { background: #10b981; box-shadow: 0 0 8px rgba(16, 185, 129, 0.5); }
+
+/* Recent Activity List */
+.recent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.recent-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.2s ease;
+}
+
+.recent-item:last-child {
+  border-bottom: none;
+}
+
+.recent-item:hover {
+  background-color: rgba(255, 255, 255, 0.01);
+}
+
+.recent-student-info h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.recent-student-info p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.recent-student-meta {
+  text-align: right;
+}
+
+.recent-time {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  display: block;
+  margin-top: 4px;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "student-management-system",
+  "version": "1.0.0",
+  "description": "Serverless Student Management System",
+  "main": "api/students/index.js",
+  "type": "module",
+  "scripts": {
+    "dev:api": "echo 'Run backend serverless api using Vercel CLI locally' && vercel dev",
+    "install:all": "npm install && cd client && npm install"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.2.0"
+  }
+}
